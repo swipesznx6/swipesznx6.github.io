@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+    color: white;
+    font-family: "Raleway";
+}
+
+#side-background {
+    background: linear-gradient(140deg, red, purple, rgb(0, 255, 221));
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    filter: blur(150px) brightness(0.25);
+    z-index: 0;
+}
+
+header {
+    width: 90%;
+    height: 70px;
+    margin: 50px auto;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+header h1 {
+    font-family: "Seaweed Script";
+    font-size: 3rem;
+    font-weight: 200;
+    cursor: pointer;
+    transition: 0.2s;
+    z-index: 1;
+}
+
+header h1:hover {
+    color: rgb(255, 255, 85);
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "Special Gothic Expanded One";
+    color: white;
+    z-index: 1;
+    border-bottom: 2px solid transparent;
+    padding: 6px 8px;
+}
+
+header nav a:hover {
+    border-bottom: 2px solid white;
+}
+
+.nav-primary {
+    border: 2px solid white;
+    padding: 8px 15px;
+    transition: all 0.2s;
+    box-shadow: 3px 3px 1px 1px rgba(255, 255, 255, 0.144);
+}
+
+.nav-primary::after {
+    content: " ➜";
+}
+
+.nav-primary:hover {
+    background: rgb(255, 255, 255);
+    color: black;
+    box-shadow: 3px 3px 1px 1px rgba(255, 255, 255, 0.377);
+}
